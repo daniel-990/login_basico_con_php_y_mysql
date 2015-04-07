@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header id="cabezera">
+			<div id="container_menu">
+			  <nav id="menu">
+			  	<ul class="ul">
+			  		<div id="li">
+			  		<li class="li"><a id="inicio">Inicio</a></li>
+			  		<li class="li"><a id="registro">Registro</a></li>
+			  		<li class="li"><a id="login">Login</a></li>
+			  		<li class="li"><a id="db">Base de datos</a></li>
+			  		</div>
+			  	</ul>
+			  </nav>
+			</div>
+		</header>
+
+		<div id="contenedor_textos">
+			<div id="texto">
+				<p class="p">Hola este es un texto y <br> prueba de bases de datos con php <br> de registro / login</p>
+			</div>
+
+<table class="login" border="0" align="center" valign="middle">
+        <tr>
+		<td rowspan=2>
+        <br>
+        <br>
+
+<form method="POST" action="login.php">
+
+  <fieldset class="fiel">
+    <legend class="p2" style="font-size: 18pt"><p>Login</p></legend>
+      
+    <div class="form-group">
+      <label><br>Nombre de usuario</br></label>
+      <input type="text" name="user" placeholder="Nombre de usuario"/>
+    </div>
+    
+    <div class="form-group">
+      <label><br>contraseña</br></label>
+      <input type="password" name="pass"required placeholder="contraseña"/>
+    </div>
+   <br><br>
+    <input  class="btn btn-danger" type="submit" name="submit" value="ingresar"/>
+
+  </fieldset>
+  
+</form>
+</table>
+
+ <table class="registro" border="0" align="center" valign="middle">
+        <tr>
+		<td rowspan=2>
+        <br>
+        <br>
+
+<form method="POST" action="registro.php">
+
+  <fieldset class="fiel">
+    <legend class="p2"  style="font-size: 18pt"><b>Registro usuario</b></legend>
+      
+    <div class="form-group">
+      <label><br>Nombre de usuario</br></label>
+      <input type="text" name="user" placeholder="Nombre de usuario"/>
+    </div>
+    
+    <div class="form-group">
+      <label><br>contraseña</br></label>
+      <input type="password" name="pass" required placeholder="Contraseña"/>
+    </div>
+ 
+    <div class="form-group">
+    	<label><br>correo</br></label>
+    	<input type="text" name="mail" placeholder="correo"/>
+    </div><!-- //clase ingreso -->
+        
+   <br><br>
+    <input  class="btn btn-danger" type="submit" name="submit" value="Registrarse"/>
+
+  </fieldset>
+  
+</form>
+    </table>
+
+	</div>
+</div>
+	
+</body>
+</html>
